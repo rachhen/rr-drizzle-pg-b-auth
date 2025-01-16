@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
+    "build": "react-router build && node vercel/prepare.js",
     "db:generate": "dotenv -- drizzle-kit generate",
     "db:drop": "dotenv -- drizzle-kit drop",
     "db:migrate": "dotenv -- drizzle-kit migrate",
